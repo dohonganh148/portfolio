@@ -1,0 +1,43 @@
+.col {
+  background-color: #fff;
+}
+.card {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  min-height: 265px;
+  .icon {
+    margin-bottom: 30px;
+    transition: all 0.3s linear;
+    font-size: 30px;
+    color: #222;
+    width: 50px;
+    margin: 0 auto 20px;
+  }
+  .title {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 10px;
+    transition: all 0.3s linear;
+  }
+  .desc {
+    margin-bottom: 8px;
+    font-family: "Oxygen", sans-serif;
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 26px;
+    list-style: disc;
+    margin-left: 10px;
+  }
+  &:hover {
+    .icon {
+      color: red;
+    }
+    .title {
+      color: red;
+    }
+  }
+}

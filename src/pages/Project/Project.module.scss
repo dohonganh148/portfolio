@@ -1,0 +1,15 @@
+.project{
+    padding-bottom: 80px;
+
+    .projectList{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        text-align: center;
+    }
+}
+@for $i from 1 to 7 {
+    .col:nth-child(#{$i}) {
+        animation-delay: ($i * 0.2s)-0.2s;
+    };
+};

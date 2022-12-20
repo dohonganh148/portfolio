@@ -1,0 +1,14 @@
+.services{
+    background-color: #FAFAFC;
+    padding-bottom: 50px;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+@for $i from 1 to 7 {
+    .col:nth-child(#{$i}) {
+        animation-delay: ($i * 0.2s)-0.2s;
+    };
+};

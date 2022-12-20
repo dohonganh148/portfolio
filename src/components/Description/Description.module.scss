@@ -1,0 +1,24 @@
+.bottom{
+    margin: 28px auto 10px;
+    text-align: center;
+    .btnResume {
+        padding: 12px 120px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #323232;
+        letter-spacing: 2px;
+        background-color: transparent;
+        border: 1px solid #eee;
+        cursor: pointer;
+        transition: all .3s linear;
+        &:hover{
+            background-color: #eee;
+        }
+        span{
+            font-size: 20px;
+            color: #E23F43;
+            margin-right: 8px;
+            margin-bottom: -3px;
+        }
+    }
+}

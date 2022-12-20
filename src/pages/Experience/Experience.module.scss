@@ -1,0 +1,9 @@
+@for $i from 1 to 4 {
+    .col:nth-child(#{$i}) {
+        animation-delay: ($i * 0.2s)-0.2s;
+    };
+};
+.experience{
+    padding-bottom: 80px;
+    background-color: #FAFAFC;
+}

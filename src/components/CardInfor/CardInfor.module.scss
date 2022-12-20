@@ -1,0 +1,53 @@
+.cardInfor{
+    background-color: #fff;
+    margin-top: 50px;
+    padding: 18px 15px;
+    font-family: 'Oxygen', sans-serif;
+    color: #6a6a6a;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 14px;
+    display: flex;
+    .icon{
+        margin-right: 35px;
+        margin-top: 20px;
+        font-size: 20px;
+        line-height: 30px;
+        p{
+            color: #fff;
+            background-color: #E23F43;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            text-align: center;
+            padding-top: 10px;
+        }
+    }
+    .aboutInfor{
+        .title{
+            margin: 15px 0 10px;
+            font-weight: 700;
+            font-size: 16px;
+            color: #222;
+            letter-spacing: 1.5px;
+        }
+        .year{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eaeaea;
+            font-weight: 700;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .inst{
+            margin-bottom: 10px;
+            color: #363636;
+            font-weight: 700;
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+        .desc{
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+    }
+}

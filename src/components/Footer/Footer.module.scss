@@ -1,0 +1,40 @@
+.footer{
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0;
+    .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .desc{
+            h3{
+                color: #fff;
+                font-size: 21px;
+                line-height: 30px;
+                letter-spacing: 1.5px;
+                margin-bottom: 10px;
+            }
+        }
+        
+        .link{
+            .menu{
+                display: flex;
+                justify-content: right;
+                text-transform: capitalize;
+                li{
+                    padding: 0 10px;
+                    a{
+                        color: #fff;
+                        font-family: 'Oxygen', sans-serif;
+                        font-size: 14px;
+                        font-weight: 600;
+                        transition: all .3s linear;
+                        &:hover{
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

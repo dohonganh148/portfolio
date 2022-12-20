@@ -1,0 +1,28 @@
+.tag{
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all .3s linear;
+    border-bottom: .5px solid #ddd;
+    .icon{
+        font-size: 30px;
+        margin-bottom: 18px;
+        color: #E23F43;
+    }
+    h5{
+        font-size: 13px;
+        letter-spacing: 1.5px;
+        line-height: 23px;
+    }
+    &:hover{
+        background-color: black;
+        .icon{
+            color: #fff;
+        }
+        h5{
+            color: #fff;
+        }
+    }
+}
