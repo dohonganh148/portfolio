@@ -11,9 +11,6 @@
     color: #fff;
     font-weight: 700;
   }
-  @include breakpoint(mb) {
-    display: none;
-  }
 }
 .navActive {
   transition: all ease-in-out 1s;
@@ -34,6 +31,12 @@
     letter-spacing: 0;
     font-size: 25px;
     font-weight: 800;
+    @include breakpoint(ipad) {
+      font-size: 20px;
+    }
+    @include breakpoint(xs) {
+      font-size: 16px;
+    }
   }
 }
 .row {
@@ -41,15 +44,44 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-}
-.col {
-  padding: 15px;
+  @include breakpoint(ipad) {
+    padding: 10px 0;
+  }
+  .col {
+    padding: 15px;
+  }
+  .col2{
+    @include breakpoint(ipad) {
+      display: none;
+    }
+  }
+  .dropdown{
+    display: none;
+    @include breakpoint(ipad) {
+      display: block;
+    }
+    @include breakpoint (xs) {
+      svg{
+        margin-top: 6px;
+        margin-bottom: 6px;
+      }
+    }
+  }
 }
 .navbar {
   padding: 15px;
   color: black;
+  @include breakpoint(xs) {
+    padding: 5px;
+  }
 }
 .brand {
   font-size: 25px;
   font-weight: 800;
+  @include breakpoint(ipad) {
+    font-size: 20px;
+  }
+  @include breakpoint(xs) {
+    font-size: 16px;
+  }
 }

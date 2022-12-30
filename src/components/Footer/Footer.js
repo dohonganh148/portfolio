@@ -18,8 +18,8 @@ const Footer = () => {
           </div>
           <div className={styles.link}>
             <ul className={styles.menu}>
-              {menu.map((item) => (
-                <li>
+              {menu.map((item, index) => (
+                <li key={index}>
                   <a href={item.link}>{item.label}</a>
                 </li>
               ))}

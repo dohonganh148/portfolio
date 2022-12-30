@@ -29,8 +29,8 @@ const Experience = () => {
         <div className={styles.experience} id="experience">
             <div className="container">
             <Title item={item}/>
-            {infor.map( (item) => (
-                <div className={`${styles.col} wow animate__animated animate__fadeInRight`}>
+            {infor.map( (item, index) => (
+                <div key={index} className={`${styles.col} wow animate__animated animate__fadeInRight`}>
                     <CardInfor item={item}/>
                 </div>
                 

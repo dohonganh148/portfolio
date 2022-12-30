@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import styles from "./Navbar.module.scss";
 import clsx from "clsx";
 import useScrollspy from "../../hooks";
+import { Dropdown, Space } from "antd";
+import {SlMenu} from "react-icons/sl";
+
 const Navbar = () => {
   const [style, setStyle] = useState(styles.nav);
   const menuList = [
@@ -29,6 +32,31 @@ const Navbar = () => {
       setStyle(styles.nav);
     }
   };
+
+  // DROPDOWN
+  const items = [
+    {
+      label: <a href="#home">HOME</a>,
+      key: "0",
+    },
+    {
+      label: <a href="#about">ABOUT</a>,
+      key: "1",
+    },
+    {
+      label: <a href="#skills">SKILLS</a>,
+      key: "2",
+    },
+    {
+      label: <a href="#projects">PROJECTS</a>,
+      key: "3",
+    },
+    {
+      label: <a href="#experience">EXPERIENCE</a>,
+      key: "4",
+    },
+  ];
+
   return (
     <div className={style}>
       <div className="container">
@@ -38,9 +66,10 @@ const Navbar = () => {
               Do Hong Anh
             </a>
           </div>
-          <div className={styles.col}>
-            {menuList.map((item) => (
+          <div className={`${styles.col} ${styles.col2}`}>
+            {menuList.map((item, index) => (
               <a
+                key={index}
                 href={item.link}
                 className={`${styles.navbar} ${
                   activeId === item.label.toLowerCase() ? styles.active : ""
@@ -49,6 +78,20 @@ const Navbar = () => {
                 {item.label}
               </a>
             ))}
+          </div>
+          <div className={styles.dropdown}>
+            <Dropdown
+              menu={{
+                items,
+              }}
+              trigger={["click"]}
+            >
+              <a href="#home" onClick={(e) => e.preventDefault()}>
+                <Space>
+                  <SlMenu />
+                </Space>
+              </a>
+            </Dropdown>
           </div>
         </div>
       </div>

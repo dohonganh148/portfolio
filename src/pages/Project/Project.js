@@ -52,8 +52,8 @@ const Project = () => {
       <Title item={item} />
       <div className="container">
         <div className={styles.projectList}>
-            {projectList.map( (item) => (
-              <div className= {`${styles.col} wow animate__animated animate__zoomIn`}>
+            {projectList.map( (item, index) => (
+              <div key={index} className= {`${styles.col} wow animate__animated animate__zoomIn`}>
                 <CardProject item={item}/>
               </div>
                 

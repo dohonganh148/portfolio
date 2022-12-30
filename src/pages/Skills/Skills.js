@@ -48,8 +48,8 @@ const Services = () => {
       <div className="container" id="skills">
         <Title item={item} />
         <div className={styles.row}>
-            {services.map ( (item) => (
-              <div className= {`${styles.col} wow animate__animated animate__fadeInUp`}>
+            {services.map ( (item, index) => (
+              <div key={index} className= {`${styles.col} wow animate__animated animate__fadeInUp`}>
                 <CardService item={item}/>
               </div>
             ))}

@@ -93,7 +93,7 @@
 
 @include breakpoint(ipad) {
   .content{
-    padding: 80px 40px;
+    padding: 120px 40px 80px;
     gap: 30px;
     .avatar{
       width: 150px;
@@ -124,7 +124,7 @@
 
 @include breakpoint(xs) {
   .content{
-    padding: 60px 20px;
+    padding: 100px 20px 60px;
     .avatar{
       width: 120px;
       height: 120px;
