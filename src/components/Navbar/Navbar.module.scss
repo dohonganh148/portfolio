@@ -1,3 +1,4 @@
+@import "/src/styles/mixin.scss";
 .nav {
   position: fixed;
   top: 0;
@@ -9,6 +10,9 @@
   a {
     color: #fff;
     font-weight: 700;
+  }
+  @include breakpoint(mb) {
+    display: none;
   }
 }
 .navActive {
@@ -23,7 +27,7 @@
     letter-spacing: 3px;
     color: #222;
     &.active {
-        color: #E23F43;
+      color: #e23f43;
     }
   }
   .brand {

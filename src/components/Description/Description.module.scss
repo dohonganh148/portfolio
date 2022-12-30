@@ -1,3 +1,5 @@
+@import "/src/styles/mixin.scss";
+
 .bottom{
     margin: 28px auto 10px;
     text-align: center;
@@ -19,6 +21,36 @@
             color: #E23F43;
             margin-right: 8px;
             margin-bottom: -3px;
+        }
+    }
+}
+
+@include breakpoint(mb) {
+    .top{
+        p{
+            font-size: 14px;
+        }
+    }
+    .bottom{
+        .btnResume {
+            padding: 10px 35px;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+@include breakpoint(ipad) {
+    .top{
+        p{
+            font-size: 13px;
+        }
+    }
+}
+
+@include breakpoint(xs) {
+    .bottom{
+        .btnResume {
+            padding: 10px 25px;
         }
     }
 }

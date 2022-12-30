@@ -36,44 +36,52 @@
 //     transform: rotate(360deg);
 //   }
 // }
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,800&family=Roboto:wght@100;300;400;500;700;900&family=Rubik:wght@500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-$c1: #6A6A6A;
-*{
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+@import "/src/styles/mixin.scss";
+
+$c1: #6a6a6a;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
-
 }
 
-a{
+a {
   text-decoration: none;
 }
-li{
+li {
   list-style: none;
 }
-.container{
+.container {
   width: 75%;
   margin: 0 auto;
+  @include maxWidth(1024px) {
+    width: 90%;
+  }
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #323232;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin-top: 0px;
 }
-hr{
+hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eee;
 }
-p{
-  font-family: 'Oxygen', sans-serif;
+p {
+  font-family: "Oxygen", sans-serif;
 }

@@ -14,8 +14,10 @@ const Hobbies = () => {
         </p>
       </div>
       <div className={styles.bottom}>
+        <a href="https://www.topcv.vn/xem-cv/VVVTUAFUUFJQBFUEUQ0FCQhUVQUBBlIMV1UHBw7c9c" target="blank">
         <button className={styles.btnResume}>
           <span><FaDownload /></span>DOWNLOAD RESUME</button>
+        </a>
       </div>
     </div>
   );

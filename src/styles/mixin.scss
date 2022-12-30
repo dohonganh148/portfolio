@@ -8,3 +8,55 @@
     cursor: pointer;
     border: none;
   }
+
+  @mixin breakpoint($class) {
+    @if $class == xs {
+        @media (max-width: 540px) {
+            @content;
+        }
+    } @else if $class == mb {
+        @media (max-width: 1024px) {
+            @content;
+        }
+    } @else if $class == ipad {
+        @media (max-width: 768px) {
+            @content;
+        }
+    } @else if $class == sm {
+        @media (max-width: 900px) {
+            @content;
+        }
+    } @else if $class == mac {
+        @media (min-width: 1280px) {
+            @content;
+        }
+    } @else if $class == lg {
+        @media (min-width: 1281px) {
+            @content;
+        }
+    } @else if $class == xlg {
+        @media (min-width: 1366px) {
+            @content;
+        }
+    } @else if $class == macpro {
+        @media (min-width: 1790px) {
+            @content;
+        }
+    } @else if $class == fhd {
+        @media (min-width: 1900px) {
+            @content;
+        }
+    }
+}
+
+@mixin maxWidth($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+}
+
+@mixin minWidth($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}

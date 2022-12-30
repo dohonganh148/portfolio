@@ -42,10 +42,11 @@
   .contact {
     margin-top: 100px;
     display: flex;
-    justify-content: center;
-    gap: 80px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
     a {
-      cursor: pointer; 
+      cursor: pointer;
       color: #fff;
       display: flex;
       align-items: center;
@@ -60,6 +61,7 @@
     }
   }
 }
+
 .subtitle {
   margin: 10px 0;
   font-style: italic;
@@ -77,5 +79,70 @@
   &:hover {
     background-color: #fff;
     color: black;
+  }
+}
+
+@include breakpoint(mb) {
+  .content{
+    h1{
+      font-size: 32px;
+      letter-spacing: 3px;
+    }
+  }
+}
+
+@include breakpoint(ipad) {
+  .content{
+    padding: 80px 40px;
+    gap: 30px;
+    .avatar{
+      width: 150px;
+      height: 150px;
+    }
+    .subtitle{
+      font-size: 15px;
+    }
+    h1{
+      font-size: 30px;
+      letter-spacing: 2px;
+      line-height: 36px
+    }
+    .btnDiscover{
+      margin-top: 30px;
+    }
+    .contact{
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      span{
+        font-size: 12px
+      }
+    }
+  }
+}
+
+@include breakpoint(xs) {
+  .content{
+    padding: 60px 20px;
+    .avatar{
+      width: 120px;
+      height: 120px;
+    }
+    .subtitle{
+      font-size: 14px;
+    }
+    h1{
+      font-size: 24px;
+      letter-spacing: 1px;
+      line-height: 36px
+    }
+    .btnDiscover{
+      margin-top: 20px;
+    }
+    .contact{
+      margin-top: 50px;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }

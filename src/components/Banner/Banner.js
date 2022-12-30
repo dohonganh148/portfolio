@@ -36,7 +36,9 @@ const Banner = () => {
           <img className={styles.avatar} src={avatar} alt="avatar" />
           <div className={styles.subtitle}>Hello, my name is Do Hong Anh</div>
           <h1>I AM FRONT-END DEVELOPER</h1>
+          <a href="https://www.topcv.vn/xem-cv/VVVTUAFUUFJQBFUEUQ0FCQhUVQUBBlIMV1UHBw7c9c" target="blank">
           <button className={styles.btnDiscover}>My CV</button>
+          </a>
           <div className={styles.contact}>
             {contacts.map((item, index) => (
               <a href={item.link} target={"blank"} key={index}>

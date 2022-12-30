@@ -1,3 +1,5 @@
+@import "/src/styles/mixin.scss";
+
 .row{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -10,5 +12,13 @@
     }
     .col2 {
         padding-left: 50px;
+    }
+    @include breakpoint(mb) {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        .col2 {
+            padding-left: 0;
+        }
     }
 }

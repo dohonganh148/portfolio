@@ -1,3 +1,5 @@
+@import "/src/styles/mixin.scss";
+
 .services{
     background-color: #FAFAFC;
     padding-bottom: 50px;
@@ -12,3 +14,15 @@
         animation-delay: ($i * 0.2s)-0.2s;
     };
 };
+
+@include breakpoint(mb) {
+    .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@include breakpoint(xs) {
+    .row{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+}
