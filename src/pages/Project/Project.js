@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./Project.module.scss";
 import Title from "../../components/Title/Title";
 import CardProject from "../../components/CardProject/CardProject";
+import fiverr from "../../images/fiverr.png";
+import adminFiverr from "../../images/adminFiverr.png";
 import movietickets from "../../images/movietickets.png";
 import adminmovie from "../../images/adminmovie.png";
 import management from "../../images/management.png";
@@ -18,6 +20,16 @@ const Project = () => {
   };
 
   const projectList = [
+    {
+      type: "FIVERR",
+      img: fiverr,
+      link: "https://fiverr-dtha.vercel.app",
+    },
+    {
+      type: "ADMIN FIVERR",
+      img: adminFiverr,
+      link: "https://adminfiverr-dtha.vercel.app",
+    },
     {
       type: "MOVIE TICKETS",
       img: movietickets,

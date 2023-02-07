@@ -25,7 +25,7 @@ const Banner = () => {
     },
     {
       icon: <FaMapMarkerAlt />,
-      data: "Hồ Tùng Mậu, Hà Nội",
+      data: "Ho Tung Mau, Ha Noi",
     },
   ];
   return (
