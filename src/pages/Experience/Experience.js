@@ -13,7 +13,7 @@ const Experience = () => {
         {
             icon: <FaGraduationCap />,
             title: 'FRONTEND STUDENT',
-            year: '06/2022 - 02/2023',
+            year: '07/2022 - 02/2023',
             inst: 'CyberSoft Academy',
             desc: 'Learning Frontend skills: HTML, SCSS, Javascript, ES6, Restful API, ReactJS, Redux'
         },
